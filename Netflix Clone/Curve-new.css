@@ -1,0 +1,46 @@
+.curve-container {
+    height: 6.25rem;
+    width: 100%;
+    /* border: 2px solid white; */
+    box-sizing: border-box;
+    position: absolute;
+    top: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+
+.rainbow-container {
+    height: 100%;
+    width: 130%;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: relative;
+    border-top: .25rem solid transparent;
+    /* overflow: hidden; */
+    margin-left: -15%;
+    margin-right: -15%;
+}
+
+.rainbow-container::before {
+    content: '';
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    border-radius: inherit;
+    position: absolute;
+    inset: 0;
+}
+
+.trending {
+    position: absolute;
+    color: white;
+    align-self: flex-start;
+    bottom: 3px;
+    left: 145px;
+    font-family: Netflix-light;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: block;
+}
