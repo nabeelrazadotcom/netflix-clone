@@ -1,18 +1,18 @@
 @font-face {
    font-family: "Netflix";
-   src: url("fonts/NetflixSans-Regular.otf");
+   src: url("../assets/fonts/NetflixSans-Regular.otf");
 }
 @font-face {
    font-family: "Netflix-bold";
-   src: url("fonts/NetflixSans-Bold.otf");
+   src: url("../assets/fonts/NetflixSans-Bold.otf");
 }
 @font-face {
    font-family: "Netflix-medium";
-   src: url("fonts/NetflixSans-Medium.otf");
+   src: url("../assets/fonts/NetflixSans-Medium.otf");
 }
 @font-face {
    font-family: "Netflix-light";
-   src: url("fonts/NetflixSans-Light.otf");
+   src: url("../assets/fonts/NetflixSans-Light.otf");
 }
 
 * {
@@ -25,14 +25,13 @@ body {
 }
 
 header {
-    background-image: url(PK-en-20251013-TRIFECTA-perspective_ce048a12-86cc-490f-ac7a-55d7fd620054_large.jpg);
+    background-image: url("../assets/images/backgrounds/PK-en-20251013-TRIFECTA-perspective_ce048a12-86cc-490f-ac7a-55d7fd620054_large.jpg");
     background-position: top center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
     height: 110vh;
     position: relative;
     z-index: -2;
-    /* border: 8px solid; */
 }
 
 .blk-box {
@@ -48,8 +47,9 @@ header {
     justify-content: space-between;
     margin: 0 9.25rem;
     align-items: center;
-    position:relative;
-    z-index: 10;}
+    position: relative;
+    z-index: 10;
+}
 
 .header img {
     width: 148px;
@@ -204,16 +204,17 @@ ul.trending-list li {
     margin-top: 4vw;
 }
 
-.main-section  {
+.main-section {
     display: flex;
     flex-direction: column;
     margin: 0 9%;
 }
 
-.main-section h2    {
-    font-family: 'Netflix';
+.main-section h2 {
+    font-family: "Netflix";
     font-size: 24px;
 }
+
 .promo-boxes {
     display: flex;
     width: 100%;
@@ -228,7 +229,7 @@ ul.trending-list li {
     width: 326.25px;
     height: 268px;
     border: none;
-    background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);;
+    background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -240,7 +241,7 @@ ul.trending-list li {
 }
 
 .promo-boxes .box p {
-    font-family: 'Netflix';
+    font-family: "Netflix";
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.7);
 }
@@ -258,13 +259,12 @@ ul.trending-list li {
 }
 
 .main-faq h2 {
-    font-family: 'Netflix';
+    font-family: "Netflix";
     font-size: 24px;
-
 }
 
 .main-faq .faq {
-    font-family: 'Netflix';
+    font-family: "Netflix";
     font-size: 24px;
     background-color: #2d2d2d;
     padding: 25px;
@@ -277,9 +277,8 @@ ul.trending-list li {
 }
 
 .faq span:last-child {
-    font-family: 'Netflix';
+    font-family: "Netflix";
 }
-
 
 .email {
     display: flex;
@@ -287,7 +286,7 @@ ul.trending-list li {
     margin-top: 4%;
     flex-direction: column;
     color: white;
-    font-family: 'Neflix';
+    font-family: "Neflix";
 }
 
 .main-email {
@@ -298,7 +297,7 @@ ul.trending-list li {
 
 .main-email h3 {
     text-align: center;
-    font-family: 'Netflix-light';
+    font-family: "Netflix-light";
     font-size: 1rem;
     font-weight: 100;
     letter-spacing: 1px;
@@ -307,7 +306,6 @@ ul.trending-list li {
 .main-email div {
     display: flex;
     justify-content: center;
-    
 }
 
 .main-email div input {
@@ -318,13 +316,13 @@ ul.trending-list li {
     padding: 15px;
     width: 38vw;
     font-size: 1rem;
-    font-family: 'Netflix';
+    font-family: "Netflix";
     box-sizing: border-box;
 }
 
 .main-email div input::placeholder {
     color: rgba(255,255,255,0.7);
-    font-family: 'Netflix';
+    font-family: "Netflix";
     font-size: 1rem;
 }
 
@@ -335,7 +333,7 @@ ul.trending-list li {
     border: none;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: 'Netflix-medium';
+    font-family: "Netflix-medium";
     font-size: 1.5rem;
     margin-left: 8px;
     display: flex;
@@ -352,12 +350,10 @@ ul.trending-list li {
     margin-left: 10px;
 }
 
-
-
 .footer {
     margin: 0 9%;
     margin-top: 5%;
-    font-family: 'Netflix';
+    font-family: "Netflix";
     color: white;
 }
 
@@ -372,7 +368,6 @@ ul.trending-list li {
     text-decoration-color: white;
 }
 
-
 .footer-grid ul {
     display: grid;
     margin-top: 2%;
@@ -384,47 +379,88 @@ ul.trending-list li {
 
 .footer-grid ul li a {
     color: rgba(255,255,255,0.7);
-    font-family: 'Netflix';
+    font-family: "Netflix";
     font-weight: 100;
 }
 
 .main-footer .lang {
     margin-top: 2%;
-    
 }
 
 .main-footer .lang select {
-    margin-top: 2%;    
+    margin-top: 2%;
     border: 0.5px solid rgba(128,128,128,0.7);
     border-radius: 4px;
     background-color: transparent;
     color: white;
     display: flex;
     padding: 5px 8px;
-    font-family: 'Netflix';
+    font-family: "Netflix";
     font-weight: 100;
 }
 
-
 .Pakistan {
     margin-top: 1.5%;
-    font-family: 'Netflix';
+    font-family: "Netflix";
     font-weight: 100;
     color: rgba(255,255,255,0.7);
 }
 
 .captcha {
     margin-top: 1.5%;
-    font-family: 'Netflix';
+    font-family: "Netflix";
     font-weight: 100;
     color: rgba(128,128,128,0.7);
     margin-bottom: 15vh;
 }
 
 .captcha p span a {
-    font-family: 'Netflix';
+    font-family: "Netflix";
     font-weight: 100;
     color: rgb(6, 105, 255);
 }
 
+.curve-container {
+    height: 6.25rem;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
 
+.rainbow-container {
+    height: 100%;
+    width: 130%;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: relative;
+    border-top: .25rem solid transparent;
+    margin-left: -15%;
+    margin-right: -15%;
+}
+
+.rainbow-container::before {
+    content: "";
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    border-radius: inherit;
+    position: absolute;
+    inset: 0;
+}
+
+.trending {
+    position: absolute;
+    color: white;
+    align-self: flex-start;
+    bottom: 3px;
+    left: 145px;
+    font-family: "Netflix-light";
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: block;
+}
